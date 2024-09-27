@@ -1,0 +1,516 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:Verdana,Tahoma, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+main{
+    min-height: calc(100vh - 211px - 58px);
+    transition: margin-left 0.5s;
+}
+/*Desktop*/
+@media only screen and (min-width: 769px){
+    /*-------Menu--------------*/
+    .menu-principal{
+        width: 100%;
+        position: absolute; 
+        height: 165px; 
+        background-color: #374b73;
+        top: 115px;
+        height: 60px;
+        z-index: 1;
+    }   
+    .menu-principal ul{
+        background: #374b73;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-width: 1000px;
+    }
+    .menu-principal li:hover{
+        background: #FF8197;
+        cursor: pointer;
+    }
+    .menu-principal ul li{
+        display: inline-block;
+        color:#f9f9f9;
+        background: #374b73;
+        margin-left: 60px;
+        padding: 18px;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+        
+    }
+    .menu-principal ul li a{
+        color:#f9f9f9;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 18px;
+        text-transform: capitalize;
+    }  
+    .menu-principal ul li ul{
+        background: #374b73;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 20px;
+        left: 0;
+        display: none;
+        margin-left: 0px;
+    }
+    .menu-principal ul li:hover > ul, ul li ul:hover{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+    .menu-principal ul li ul li{
+        clear: both;
+        width: 100%;
+        margin-left: 10px;
+        padding: 20px;
+    }
+    nav{
+        display: none;
+    }
+    .btn-abrir{
+        display: none;
+    }
+    /*-------LOGO--------------*/
+    .ind-logo{
+        position:absolute;
+        left:110px;
+	    top:-30px;
+	    margin-left:-120px;
+	    margin-top:-65px;
+        z-index: 1;
+    }
+    .ind-logo img{
+        max-width: 100%;
+    }
+    .logomobile{
+        display: none;
+    }
+    .fasfa-search{
+        width: 30px;
+        height: 30px;
+    }
+    /*-------Barra de pesquisa--------------*/
+    .busca{
+        float: right;
+        width: 30%;
+        left: 640px;
+        margin-top: 70px;
+        transform: translate(-50%, -50%);
+        background: white;
+        height: 40px;
+        border:solid 1px #374b73;
+        padding: 10px;
+        position: absolute;             
+    } 
+    .search-btn{
+        margin-top: -50px;
+        padding: 12px;
+        float: right;
+        width: 20px;
+        height: 35px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .search-txt{
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        font-size: 16px;
+        line-height: 40px;
+        width: 420px;
+    }
+    ::-webkit-input-placeholder {
+        color: #374b73;      
+    }
+    /*-------icone de cadastro--------------*/
+     .icone{
+        margin-top: 5px;
+        margin-left: 950px;
+        position: absolute;
+        max-width:450px;
+        top:-0px;
+        padding-top: 50px;
+    }
+    /*-------frase do icone de cadastro--------------*/
+    .entre{
+        font-family: Verdana,Tahoma, sans-serif;
+        font-size: 13px ;
+        color: #374b73;
+        margin-left: 50px;
+        margin-top: -5px;  
+    }
+    .entre:hover{
+        text-decoration: underline;
+    }
+    .saudacao{
+        font-family: Verdana,Tahoma, sans-serif;
+        font-size: 14px;
+        color: #374b73;
+        margin-left: 50px;
+        margin-top: -46px; 
+    }
+   
+     /*-------IMAGEM ALIMENTOS---------*/
+
+     .img{
+        margin-top:130px ;
+       margin-left: auto;
+    }
+  
+  
+    /*---------produtos gaiolas e acessorios----------*/
+
+   #linha1{
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 310px;
+    margin-top: 200px;
+    border-color:#C0C0C0;
+    }
+
+#linha1 #img1{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha1 #idec1{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha1 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+
+#linha2{
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 590px;
+    margin-top: -287px;
+    border-color:#C0C0C0;
+    }
+
+#linha2 #img2{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha2 #idec2{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha2 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+
+
+#linha3{
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 875px;
+    margin-top: -287px;
+    border-color:#C0C0C0;
+    }
+
+#linha3 #img3{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha3 #idec3{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha3 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+
+
+#linha4 {
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 1150px;
+    margin-top: -287px;
+    border-color:#C0C0C0;
+    }
+
+#linha4 #img4{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha4 #idec4{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha4 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+
+
+#linha5 {
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 310px;
+    margin-top: 20px;
+    border-color:#C0C0C0;
+    }
+
+#linha5 #img5{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha5 #idec5{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha5 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+
+#linha6{
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 590px;
+    margin-top: -287px;
+    border-color:#C0C0C0;
+    }
+
+#linha6 #img6{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha6 #idec6{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha6 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+   
+   
+#linha7{
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 875px;
+    margin-top: -287px;
+    border-color:#C0C0C0;
+    }
+
+#linha7 #img7{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha7 #idec7{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha7 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+
+#linha8 {
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 1150px;
+    margin-top: -287px;
+    border-color:#C0C0C0;
+    }
+
+#linha8 #img8{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha8 #idec8{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha8 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+   
+#linha9 {
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 310px;
+    margin-top: 20px;
+    border-color:#C0C0C0;
+    }
+
+#linha9 #img9{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha9 #idec9{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+
+#linha9 #estrela{
+    margin-left: 160px;
+    margin-top: -60px;
+} 
+
+#linha10{
+    border-width: 3px;
+    padding: 2px; 
+    border-style: double;
+    width: 17%;
+    height: 49%;
+    margin-left: 590px;
+    margin-top: -287px;
+    border-color:#C0C0C0;
+    }
+
+#linha10 #img10{
+    align-items: center;
+    margin-left: 40px; 
+}
+
+
+#linha10 #idec10{ 
+    border-width: 2px;
+    text-decoration: none; font-family: 'SourceSans Pro', sans-serif; 
+    color: #374b73;
+}
+
+.precos{
+    text-align: left; font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #374b73;
+} 
+}

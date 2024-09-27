@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+	html body{
+        font-family: 'Open Sans', sans-serif;
+		text-align: center;
+        background-color: #ecf0f1;
+        overflow-x: hidden;
+       
+	}
+   
+    .logo{
+        background-color: #fff;
+        position:absolute;
+        left:110px;
+        top:-15px;
+        margin-left:-110px;
+        margin-top:-75px;
+        height: 35%;
+        width: 100%;
+    }
+
+    img{
+        margin-left: -1000px;
+    }
+
+    .linha{
+        width: 100%;
+        text-align: center; 
+        margin: 0 auto 0 0; 
+        margin-top: -142px;
+        background-color: #374B73;
+    }
+
+    .bloco{
+        width: 55%;
+        text-align: center;
+        border: 2px solid #374B73;
+        padding: 20px;
+        margin-top: 16%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #374B73;
+        margin-left: 340px;
+        background-color: white;
+    }
+    
+    .titulo{
+        width: 100%;
+        color: #374B73;
+    }
+
+    .titulo h1{
+        margin-top: 0px;
+        padding: 10px;
+    }
+
+    .mensagem {
+        color: #374B73;
+        padding: 2px 5px 25px 5px;
+        font-size: 16px;
+        font-family:  sans-serif;
+    }
+
+    .btn{
+        width: 60%;
+        margin-left: 140px;
+        padding: 2px 5px 5px 5px;
+    }
+
+    .btn a{
+        width: 100%;
+        background-color: #374B73;
+        display: block;
+        color: white;
+        padding: 7px 0px 7px 0px;
+        text-decoration: none;
+        border-radius: 10px 10px 10px 10px;
+        margin-bottom: 10px; 
+        font-size: 15px;
+        padding: 8px;
+        
+    }
+
+    .btn a:hover{
+        background-color: #FF8197;
+    }
+
+    .btn2{
+        width: 60%;
+        margin-left: 140px;
+        padding: 2px 5px 5px 5px;
+    }
+
+    .btn2 a{
+        width: 100%;
+        background-color: #374B73;
+        display: block;
+        color: white;
+        padding: 7px 0px 7px 0px;
+        text-decoration: none;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .btn2 a:hover{
+        background-color: #FF8197;
+    }
+
